@@ -26,7 +26,7 @@
 
     <!-- ========================= Header =========================== -->
     <header class="header" id="header">
-        <nav class="nav container">
+        <nav class="nav__container">
             <a href="#" class="nav__logo">
                 <img src="assets/img/P_logo.png" alt="" class="logo" />
             </a>
@@ -49,7 +49,7 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#projects" class="nav__link">
+                        <a href="#portfolio" class="nav__link">
                             <i class="uil uil-folder nav__icon"></i> Projects
                         </a>
                     </li>
@@ -68,7 +68,10 @@
                 <i class="uil uil-times nav__close" id="nav-close"></i>
             </div>
 
-            <div class="nav_btns">
+            <div class="nav__btns">
+                <!-- Theme Change Button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                 </div>
@@ -116,9 +119,9 @@
                     </div>
 
                     <div class="home__data">
-                        <h1 class="home__title">Hi, I'am Priyanka</h1>
+                        <h1 class="home__title">Hi, I'am Priyanka Sidgiddi</h1>
                         <h3 class="home__subtitle"> Full Stack Web Developer</h3>
-                        <p class="home__description">Short Description</p>
+                        <p class="home__description">Passionate about Web Design, I present here my main creations made during my studies.</p>
                         <a href="#contact" class="button button--flex">
                             Contact <i class="uil uil-message button__icon"></i>
                         </a>
@@ -376,12 +379,42 @@
 
     <!--==================== FOOTER ====================-->
     <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Priyanka</h1>
+                    <span class="footer__subtitle">Frontend developer</span>
+                </div>
 
+                <ul class="footer__links">
+                    <li>
+                        <a href="#portfolio" class="footer__link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- <div class="footer__socials">
+                    <a href="" class="footer__social">
+                        Insta
+                    </a>
+                    <a href="" class="footer__social">
+                        
+                    </a>
+                    <a href="" class="footer__social">
+                        
+                    </a>
+                </div> -->
+            </div>
+        </div>
 
     </footer>
 
     <!--==================== SCROLL TOP ====================-->
-
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
 
     <!--==================== SWIPER JS ====================-->
     <script src="assets/js/swiper-bundle.min.js"></script>
