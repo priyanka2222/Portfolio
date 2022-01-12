@@ -569,7 +569,9 @@ img{
 .swiper-pagination-bullet{
     outline: none;
 }
-
+.portfolio__btns{
+    display: inline-block;
+}
 
 /*==================== PROJECT IN MIND ====================*/
 
@@ -718,7 +720,18 @@ img{
     .nav__list{
         column-gap: 0;
     }
-
+    .portfolio__button{
+        display: inline-block;
+        width: 40px;
+        margin-top: 10px;
+        /* font-size: 10px; */
+    }
+    .button{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #FFF;
+    padding: 1rem;
+    }
     .home__content{
         grid-template-columns: .25fr 3fr;
     }
@@ -762,7 +775,7 @@ img{
     }
     .skills__header{
         justify-self: center;
-        padding-left: 20%;
+        padding-left: 25%;
     }
     .portfolio__content,
     .contact__container,
