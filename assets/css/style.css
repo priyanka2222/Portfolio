@@ -337,9 +337,9 @@ img{
     margin-bottom: var(--mb-2);
 }
 
-.home__scroll{
+/* .home__scroll{
     /* display: none; */
-}
+} */
 
 .home__scroll-button{
     color: var(--first-color);
@@ -430,6 +430,8 @@ img{
 
 .skills__icon{
     margin-right: var(--mb-0-75);
+    box-shadow: 10px 10px 8px #888;;
+    animation: ants 12s linear infinite;
 }
 
 /*==================== QUALIFICATION ====================*/
@@ -656,8 +658,15 @@ img{
     row-gap: 1.5rem;
 }
 
-.footer__links:hover{
+.footer__link:hover{
     color: var(--first-color-lighter);
+}
+
+.footer__copy{
+    font-size: var(--smaller-font-size);
+    text-align: center;
+    color : var(--text-color-light);
+    margin-top: var(--mb-3);
 }
 
 .footer__title,
@@ -882,6 +891,9 @@ img{
         flex-direction: row;
         column-gap: 2rem;
     }
+    .footer__copy{
+        text-align: center;
+    }
     .skills__header{
         justify-self: center;
         padding-left: 30%;
@@ -956,5 +968,8 @@ img{
     
     .change-theme:hover{
         color: var(--first-color)
+    }
+    .footer__copy{
+        text-align: center;
     }
 }
