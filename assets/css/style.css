@@ -9,7 +9,7 @@
 
 /* ========== Colors ========= */
 /* Change favorite color */
---hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340 */
+--hue-color: 230; /*Purple 250 - Green 142 - Blue 230 - Pink 340 */
 
 /* HSL color mode */
 --first-color: hsl(var(--hue-color), 68%, 61%);
@@ -200,7 +200,9 @@ img{
     justify-content: space-between;
     align-items: center;
 }
-
+.nav__logo{
+    padding-left: 10px;
+}
 .nav__logo,
 .nav__toggle{
     color: var(--title-color);
@@ -338,7 +340,7 @@ img{
 }
 
 /* .home__scroll{
-    /* display: none; */
+    /* display: none;
 } */
 
 .home__scroll-button{
@@ -412,12 +414,17 @@ img{
 .skills_container{
     row-gap: 0;
 }
+.skills__grid{
+    display: grid;
+    gap: 1.5rem;
+}
 
 .skills__header{
     display: flex;
     align-items: center;
     margin-bottom: var(--mb-2-5);
     cursor: pointer;
+    justify-content: center;
 }
 
 .skills__icon{
@@ -432,6 +439,40 @@ img{
     margin-right: var(--mb-0-75);
     box-shadow: 10px 10px 8px #888;;
     animation: ants 12s linear infinite;
+}
+#s5{
+    display: none;
+}
+#s6{
+    display: none;
+}
+/* #s7{
+    display: none;
+} */
+.e__img{
+    width: 80px;
+    height: 70px;
+    padding: 20px 15px 10px 15px;
+    margin-right: var(--mb-0-75);
+    box-shadow: 10px 10px 8px #888;
+    animation: ants 12s linear infinite;  
+}
+.mongo__img{
+    width: 80px;
+    height: 70px;
+    padding: 10px 25px 10px 25px;
+    margin-right: var(--mb-0-75);
+    box-shadow: 10px 10px 8px #888;
+    animation: ants 12s linear infinite;
+   
+}
+.redux__img{
+    width: 80px;
+    height: 70px;
+    padding: 10px 15px 10px 15px;
+    margin-right: var(--mb-0-75);
+    box-shadow: 10px 10px 8px #888;
+    animation: ants 12s linear infinite;  
 }
 
 /*==================== QUALIFICATION ====================*/
@@ -522,6 +563,7 @@ img{
 }
 .portfolio__img{
     width: 265px;
+    height: 90%;
     border-radius: .5rem;
     justify-self: center;
 }
@@ -753,12 +795,17 @@ img{
     .qualification__data{
         gap: .5rem;
     }
-
+    .skills__header{
+        display: flex;
+        align-items: center;
+        margin-bottom: var(--mb-2-5);
+        cursor: pointer;
+        justify-content: center;
+    }
     .services__container{
         grid-template-columns: max-content;
         justify-content: center;
     }
-
 
 }
 
@@ -784,7 +831,7 @@ img{
     }
     .skills__header{
         justify-self: center;
-        padding-left: 25%;
+        /* padding-left: 25%; */
     }
     .portfolio__content,
     .contact__container,
@@ -896,7 +943,7 @@ img{
     }
     .skills__header{
         justify-self: center;
-        padding-left: 30%;
+        /* padding-left: 30%; */
     }
 }
 /* For large devices */
@@ -970,6 +1017,10 @@ img{
         color: var(--first-color)
     }
     .footer__copy{
+        padding-left: 43.5%;
         text-align: center;
+    }
+    .skills__icon{
+        margin: 0 10px 0 10px;
     }
 }
