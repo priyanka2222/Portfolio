@@ -843,6 +843,7 @@ img{
     .footer__container{
         grid-template-columns: repeat(2, 1fr);
     }
+    
     /* .skills__header{
         margin-left: 50%;
         background-color: aqua;
